@@ -8,7 +8,7 @@ import {
 import { Stock } from './Stock'
 
 @Entity({
-  name: 'sector_weightings',
+  name: 'sector_weigthings',
 })
 export class SectorWeighting {
   @PrimaryGeneratedColumn()
@@ -23,6 +23,6 @@ export class SectorWeighting {
   @Column()
   sector: string
 
-  @Column({ type: 'decimal' })
+  @Column({ type: 'double' })
   percentage: number
 }

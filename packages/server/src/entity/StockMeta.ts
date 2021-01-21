@@ -4,7 +4,6 @@ import {
   Column,
   OneToOne,
   JoinColumn,
-  Index,
 } from 'typeorm'
 import { Stock } from './Stock'
 
@@ -20,9 +19,7 @@ export class StockMeta {
   })
   price: number
 
-  @Column({
-    type: 'double',
-  })
+  @Column({ type: 'double' })
   market_cap: number
 
   @Column()
